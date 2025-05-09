@@ -34,11 +34,13 @@ export default function RootLayout({
         <SessionProvider>
           <ThemeProvider attribute="class" enableSystem>
             <Provider>
-              <EditorProvider>{children}</EditorProvider>
+              <EditorProvider>{children}
+                <Analytics />
+              </EditorProvider>
             </Provider>
           </ThemeProvider>
         </SessionProvider>
-        <Analytics />
+
       </body>
     </html>
   );
