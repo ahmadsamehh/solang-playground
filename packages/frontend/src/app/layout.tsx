@@ -5,7 +5,8 @@ import EditorProvider from "@/context/EditorProvider";
 import { Provider } from "jotai";
 import ThemeProvider from "@/components/ThemeProvider";
 import { SessionProvider } from "next-auth/react";
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from '@vercel/analytics/react';
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
